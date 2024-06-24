@@ -1,0 +1,39 @@
+@use "./variables";
+@use "./mixins";
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: variables.$color-gray-8;
+}
+
+.heading-primary {
+  display: inline-block;
+  font-size: 4rem;
+
+  @include mixins.respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 2.5rem;
+
+  @include mixins.respond(tab-land) {
+    font-size: 2.4rem;
+  }
+  @include mixins.respond(tab-port) {
+    font-size: 2.3rem;
+  }
+  @include mixins.respond(phone) {
+    font-size: 2.2rem;
+  }
+}
+
+.heading-tertiary {
+  display: inline-block;
+  font-size: 1.2rem;
+}

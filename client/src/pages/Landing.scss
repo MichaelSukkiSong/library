@@ -1,0 +1,56 @@
+@use "../styles/variables";
+
+.landing {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    text-align: center;
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+    color: variables.$color-primary-8;
+  }
+
+  &__description {
+    margin-bottom: 10rem;
+    color: variables.$color-primary-8;
+  }
+
+  &__btn {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    background-color: variables.$color-primary-5;
+    box-shadow: 6px 6px 10px variables.$color-gray-5;
+    transition: 0.2s all;
+
+    &:hover {
+      background-color: variables.$color-primary-6;
+      box-shadow: 4px 4px 10px variables.$color-gray-5;
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      transform: translateY(0px);
+    }
+
+    &-section {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__gotolink {
+    color: variables.$color-white;
+
+    &:hover {
+      color: variables.$color-white;
+    }
+  }
+}

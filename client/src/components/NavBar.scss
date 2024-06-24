@@ -1,0 +1,44 @@
+@use "../styles/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+
+  &__logobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 1rem;
+
+    font-size: variables.$default-font-size-4;
+  }
+
+  &__logolink {
+    color: variables.$color-primary-6;
+    transition: color 0.2s;
+
+    &:hover {
+      color: variables.$color-primary-8;
+    }
+  }
+
+  &__navbox {
+    font-size: variables.$default-font-size-3;
+  }
+
+  &__item {
+    padding-right: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$color-primary-6;
+    transition: color 0.2s;
+
+    &:hover {
+      color: variables.$color-primary-8;
+    }
+  }
+}

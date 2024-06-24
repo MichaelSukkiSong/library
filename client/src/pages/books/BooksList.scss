@@ -1,0 +1,53 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.container {
+  padding-top: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
+  @include mixins.respond(tab-land) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include mixins.respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mixins.respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.create-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: variables.$color-success;
+  font-size: variables.$default-font-size-1;
+
+  transition: 0.2s all;
+
+  &:hover {
+    background-color: variables.$color-success-hover;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$color-white;
+  }
+
+  &__section {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+  }
+}
