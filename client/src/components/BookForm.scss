@@ -3,8 +3,7 @@
 .book-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 400px;
+  width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
@@ -19,14 +18,32 @@
     color: #333;
   }
 
+  &__field {
+  }
+
+  &__label {
+    font-size: variables.$default-font-size-small-2;
+    padding-left: 1px;
+    font-weight: 300;
+  }
+
+  &__error {
+    background-color: #f59898;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
   &__input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: variables.$default-font-size;
     box-sizing: border-box;
+    outline: none;
   }
 
   &__button {
