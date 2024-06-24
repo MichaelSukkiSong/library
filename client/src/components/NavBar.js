@@ -15,7 +15,7 @@ const NavBar = () => {
           <a
             className="nav__link"
             target="_blank"
-            href="https://github.com/MichaelSukkiSong"
+            href="https://github.com/MichaelSukkiSong/library"
             rel="noreferrer"
           >
             <FaGithub />
