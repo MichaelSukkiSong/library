@@ -2,10 +2,9 @@
 
 A Full Stack application that manages a library of books.
 
-Click link below to see live demo (ctrl+click to view in different tab):
+Click link below to see live demo (ctrl+click to view in different tab):  
 [Live](https://boiling-garden-49722-3e04e2933345.herokuapp.com/)
 
-Main Sceen
 ![Main Screen](images/screenshot.png)
 
 ## Table of Contents
