@@ -2,8 +2,10 @@
 
 A Full Stack application that manages a library of books.
 
+Click link below to see live demo (ctrl+click to view in different tab):
 [Live](https://boiling-garden-49722-3e04e2933345.herokuapp.com/)
 
+Main Sceen
 ![Main Screen](images/screenshot.png)
 
 ## Table of Contents
@@ -58,7 +60,7 @@ A Full Stack application that manages a library of books.
     - List all books
     - Create a new book
     - Edit a book
-  - SASS was use for the overall styling and to management the css of the project.
+  - SASS was used for the overall styling and to management the css of the project.
   - Global styles folder to manage widely used css variables and styles
   - Validation of inputs from Frontend Forms
 
@@ -134,8 +136,8 @@ Follow these steps to set up and run Library on your local machine.
     npm run dev
     ```
 
-This will boot up both the Frontend and Backend code of the project in development mode.
+- This will boot up both the Frontend and Backend code of the project in development mode.
 
-The Frontend application should now be running locally on http://localhost:3000 and the Backend server at http://localhost:5000.
+- The Frontend application should now be running locally on http://localhost:3000 and the Backend server at http://localhost:5000.
 
-Navigate to http://localhost:3000 to see the application
+- Navigate to http://localhost:3000 to see the application
