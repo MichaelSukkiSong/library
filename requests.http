@@ -1,0 +1,34 @@
+GET http://localhost:5000/api/books HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/books/1 HTTP/1.1
+
+###
+
+POST http://localhost:5000/api/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "title1",
+    "author": "author1",
+    "yearPublished": 1990,
+    "genre": "thriller"
+}
+
+###
+
+PUT http://localhost:5000/api/books/4bddcc86-5180-4fc8-826c-19b0bc2fbf37 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "title1",
+    "author": "author1",
+    "yearPublished": 1991,
+    "genre": "thriller"
+}
+
+###
+
+DELETE http://localhost:5000/api/books/4bddcc86-5180-4fc8-826c-19b0bc2fbf37 HTTP/1.1
+content-type: application/json
