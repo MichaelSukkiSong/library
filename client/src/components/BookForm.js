@@ -31,6 +31,7 @@ const BookForm = ({
             placeholder="Title"
             value={formValue.title}
             onChange={handleChange}
+            tabIndex="0"
           />
           {errors.title && (
             <div className="book-form__error" aria-live="polite">
@@ -49,6 +50,7 @@ const BookForm = ({
             placeholder="Author"
             value={formValue.author}
             onChange={handleChange}
+            tabIndex="0"
           />
           {errors.author && (
             <div className="book-form__error" aria-live="polite">
@@ -69,6 +71,7 @@ const BookForm = ({
             value={formValue.yearPublished}
             onChange={handleChange}
             min="1"
+            tabIndex="0"
           />
           {errors.yearPublished && (
             <div className="book-form__error" aria-live="polite">
@@ -87,6 +90,7 @@ const BookForm = ({
             placeholder="Genre"
             value={formValue.genre}
             onChange={handleChange}
+            tabIndex="0"
           />
           {errors.genre && (
             <div className="book-form__error" aria-live="polite">
@@ -95,7 +99,7 @@ const BookForm = ({
           )}
         </div>
         <div className="book-form__button-section">
-          <button className="book-form__button" type="submit">
+          <button className="book-form__button" type="submit" tabIndex="0">
             {FormTitle}
           </button>
         </div>
