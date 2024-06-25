@@ -19,15 +19,15 @@
   }
 
   &__label {
-    font-size: variables.$default-font-size-small-2;
+    font-size: variables.$default-font-size-small-1;
     padding-left: 1px;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   &__error {
     background-color: #f59898;
     color: white;
-    padding: 5px;
+    padding: 6px 10px;
     border-radius: 5px;
     margin-bottom: 1rem;
   }
@@ -38,9 +38,13 @@
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: variables.$default-font-size;
+    font-size: variables.$default-font-size-small-2;
     box-sizing: border-box;
     outline: none;
+
+    &:focus {
+      border: 1px solid variables.$color-primary-6;
+    }
   }
 
   &__button {
