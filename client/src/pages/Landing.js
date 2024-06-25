@@ -19,6 +19,13 @@ const Landing = () => {
           </NavLink>
         </div>
       </div>
+      <div className="landing__logo-section">
+        <img
+          src="/images/book-logo.svg"
+          alt="book-logo"
+          className="landing__logo"
+        />
+      </div>
     </div>
   );
 };
