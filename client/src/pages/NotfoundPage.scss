@@ -1,0 +1,15 @@
+@use "../styles/variables";
+@use "../styles/mixins";
+@use "../styles/typography";
+
+.not-found-container {
+  & > h1 {
+    font-size: 35px;
+  }
+}
+
+.link-button {
+  font-size: 25px;
+  text-decoration: none;
+  color: variables.$color-primary-5;
+}

@@ -14,6 +14,7 @@ import BooksList from "./pages/books/BooksList";
 import BookNew from "./pages/books/BookNew";
 import BookEdit from "./pages/books/BookEdit";
 import ErrorPage from "./pages/ErrorPage";
+import NotfoundPage from "./pages/NotfoundPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
           />
         </Route>
       </Route>
+      <Route path="*" element={<NotfoundPage />} />
     </Route>
   )
 );
