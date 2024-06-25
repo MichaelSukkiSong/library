@@ -11,10 +11,18 @@ body {
 
 .heading-primary {
   display: inline-block;
-  font-size: 4rem;
+  font-size: 5.5rem;
+
+  @include mixins.respond(tab-land) {
+    font-size: 5rem;
+  }
+
+  @include mixins.respond(tab-port) {
+    font-size: 4.5rem;
+  }
 
   @include mixins.respond(phone) {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
