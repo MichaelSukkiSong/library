@@ -55,14 +55,14 @@ Click link below to see live demo (ctrl+click to view in different tab):
 
 - Frontend
 
-  - A state management library (Zustand) was used to manage the state of the books and the functions that alters the state of books
+  - A state management library (Zustand) was used to manage the state of the books and the functions that alters the state
   - Separate page for each of the following:
     - List all books
     - Create a new book
     - Edit a book
-  - SASS was used for the overall styling and to management the css of the project.
+  - SASS was used for the overall styling and to manage the css of the project.
   - Global styles folder to manage widely used css variables and styles
-  - Validation of inputs from Frontend Forms
+  - Validation of inputs from Frontend forms
 
 - Backend
 
