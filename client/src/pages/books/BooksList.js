@@ -33,7 +33,7 @@ const BooksList = () => {
           </div>
         </NavLink>
       </div>
-      <div className="container">{renderBooks()}</div>;
+      <div className="container">{renderBooks()}</div>
     </div>
   );
 };
